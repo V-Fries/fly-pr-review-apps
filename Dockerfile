@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache curl jq elixir git make
+RUN apk add --no-cache curl jq elixir git make clang
 
 RUN curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
 
